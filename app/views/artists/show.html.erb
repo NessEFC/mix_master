@@ -1,0 +1,7 @@
+<h1><%= @artist.name %></h1>
+
+<%= link_to "Edit", edit_artist_path(@artist) %><br/>
+<%= link_to "Delete", artist_path(@artist), method: :delete %><br/>
+<%= link_to "<< Back to All Artists", artists_path %><br/>
+
+<%= image_tag @artist.image_path %>
